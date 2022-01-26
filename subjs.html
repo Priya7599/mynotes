@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 style="font-size: 45px; font-family: cursive;margin-left: 10px;">Education Buddies</h1>
+            </div>
+
+            <div class="options" id="home" style="position: sticky;">
+                <a href="index.html" style="text-decoration: none; color: white;">Home   </a>&nbsp;&nbsp;
+                <a href="subhtml.html" style="text-decoration: none; color: white;">HTML   </a>&nbsp;&nbsp;<a href="subcss.html" style="text-decoration: none; color: white;">CSS  </a>&nbsp;&nbsp;<a href="subbsp.html" style="text-decoration: none; color: white;">Bootstrap  </a>&nbsp;&nbsp;<a href="subjs.html" style="text-decoration: none; color: white;">Javascript</a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li id="js">Index
+                        <ul type="circle">
+                            <li><a href="#whyjs" style="text-decoration: none; color: darkblue;">Why Javascript?</a></li>
+                            <li><a href="#vari" style="text-decoration: none; color: darkblue;">Variables</a></li>
+                            <li><a href="#str" style="text-decoration: none; color: darkblue;">Strings</a></li>
+                            <li<a href="#num" style="text-decoration: none; color: darkblue;">Numbers</a></li>
+                            <li><a href="#fun" style="text-decoration: none; color: darkblue;">Functions</a></li>
+                            <li><a href="#proto" style="text-decoration: none; color: darkblue;">Prototype</a></li>
+                            <li><a href="#protoc" style="text-decoration: none; color: darkblue;">Prototype Chaining</a></li>
+                            <li><a href="#pp" style="text-decoration: none; color: darkblue;">Passing parameters to Functions</a></li>
+                            <li><a href="#json" style="text-decoration: none; color: darkblue;">JSON</a></li>
+                            <li><a href="#freeze" style="text-decoration: none; color: darkblue;">Freeze and Seal Functions</a></li>
+                            <li><a href="#promise" style="text-decoration: none; color: darkblue;">Promises</a></li>
+                            <li><a href="#callback" style="text-decoration: none; color: darkblue;">Callbacks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="details" style="overflow: scroll;">
+            <h1>Javascript</h1><hr>
+            <dl>
+                <dt id="whyjs"><B>Javascript</B></dt>
+            <dd>
+                <ul>
+                    <li>It is a scripting language.</li>
+                    <li>Javascript is implemented by Brendan in 1995 at Netscape.</li>
+                    <li>It was initially named as Livescript.</li>
+                    <li>Latest version is ES11, released in 2020.</li>
+                </ul>
+            </dd><hr>
+                <dt><b>Use of Javascript</b></dt>
+                <dd>
+                    <ul>
+                        <li>Scripting</li>
+                        <li>Making page as dynamic</li>
+                        <li>Client side validation</li>
+                        <li>Modern UI framework applications. Eg ReactJS, AngularJS, etc</li>
+                    </ul>
+                </dd> <hr>
+                   <dt><b>Features of Javascript</b></dt>
+                   <dd>
+                       <ul>
+                           <li>Javascript programs(scripts) can be executed by either web browsers or by Node Engines.</li>
+                           <li>Javacript is object-based scripting language.</li>
+                           <li>Javascript supports pre-defined objects. Eg Windows, doc, console, etc.</li>
+                           <li>Javascript programs must have '.js' extension.</li>
+                       </ul>
+                   </dd> <hr>
+                   <dt id="vari"><b>Variables</b></dt>
+                   <dd>
+                       <ul>
+                           <li>Variables are used to store data.</li>
+                           <li>By using variables, we can store any type of data like numbers, strings, audio, videos, files, etc.</li>
+                           <li>Variables can be declared using 'var' or 'let' or 'const' keyword.</li>
+                           <li>'let' and 'const' keywords are introduced in ES5.</li>
+                       </ul>
+                   </dd> <hr>
+                   <dt id="str"><b>Strings</b></dt>
+                   <dd>
+                       <ul>
+                           <li>Strings can be declared with '' or "" or ``.</li>
+                           <li>`` is intoduced in ES6.</li>
+                           <li>`` is used to define multiline strings.</li>
+                           <li>Eg <br>
+                            var str = "Javascript" <br>
+                            console.log(str) <br>
+                            var mywish = `Welcome to ${str}` <br>
+                            console.log(mywish)
+                           </li>
+                       </ul>
+                   </dd> <hr>
+                   <dt id="num"><b>Numbers</b></dt>
+                   <dd>
+                       <ul>
+                           <li>JS supports various numbers like decimal, double, hexadecimal, octal and binary numbers.</li>
+                           <li>All alphabets are case insensitive in numbers.</li>
+                           <li>Eg <br> 
+                               var decimal = 100 <br>
+                               console.log(decimal) <br>
+                               var double = 12.43 <br>
+                               console.log(double) <br>
+                           </li>
+                           <li>Difference between var and let is that var is function scoped and let is block scoped.</li>
+                           <li>Var is defined throughout the program as compared to let.</li>
+                       </ul>
+                   </dd> <hr>
+                   <dt id="fun"><b>Functions</b></dt>
+                   <dd>
+                       <ul>
+                           <li>There are three types of functions, namely
+                               <ol>
+                                   <li>Named functions :- Functions with names.</li>
+                                   <li>Anonymous functions :- Functions without names (also called arrow functions).</li>
+                                   <li>Constructor functions :- This function is used to create objects.</li>
+                               </ol>
+                           </li>
+                           <li>Named function example <br>
+                               function fun_one() <br>
+                               { <br>
+                                   return fun_two <br>
+                               } <br>
+                               function fun_two() <br>
+                               { <br>
+                                   return "Hello" <br>
+                               } <br>
+                               console.log(fun_one) <br>
+                               console.log(fun_one()) <br>
+                               console.log(fun_one()()) <br>
+                           </li>
+                           <li>Anonymous Functions
+                               <ul>
+                                   <li>These are represented using arrow symbol '=>'</li>
+                                   <li>Arrow functions are more secured than named functions.</li>
+                                   <li>Anonymous functions utilize heap memory efficiently.</li>
+                                   <li>Syntax : <br>
+                                       var/let variableName = (arguments)=>{ <br>
+                                           //Bussines logic <br>
+                                       } <br>
+                                   </li>
+                                   <li>Example <br>
+                                       let myfunction = (a,b)=> a*b; <br>
+                                   </li>
+                               </ul>
+                           </li>
+                           <li>Constructor Functions
+                               <ul>
+                                   <li>It is used to create class like structure.</li>
+                                   <li>In Constructor functions, everything starts with 'this' keyword.</li>
+                                   <li>We can create object to constructor using 'new' keyword.</li>
+                                   <li>Example <br>
+                                       function class_one() <br>
+                                       { <br>
+                                           this.wish="Welcome to Jumanji" <br>
+                                       } <br>
+                                       var obj = new class_one() <br>
+                                       console.log(obj.wish) <br>
+                                   </li>
+                               </ul>
+                           </li>
+                       </ul>
+                   </dd> <hr>
+                   <dt id="proto"><b>Prototype</b></dt>
+                   <dd>
+                       <ul>
+                           <li>It is the property which adds members to constructor dynamically.</li>
+                           <li>Example <br>
+                               function class_one(){} <br>
+                               class_one.prototype.wish=`Welcome to Jungle` <br>
+                               console.log(new class_one().wish) <br>
+                           </li>
+                       </ul>
+                   </dd> <hr>
+                   <dt id="protoc"><b>Prototype Chaining</b></dt>
+                   <dd>
+                       <ul>
+                           <li>Nesting one constructor prototype to another constructor is called as prototype chaining.</li>
+                           <li>Concept of inheritance is achieved with prototype chaining.</li>
+                           <li>Example <br>
+                               function class_one(){} <br>
+                               class_one.prototype.fun_one=function(){ <br>
+                                   return "I am from function one" <br>
+                               } <br>
+                               function class_two(){} <br>
+                               class_two.prototype=object.create(class_one.prototype) <br>
+                               class_two.prototype.fun_two=function (){ <br>
+                                   return "I am from function two" <br>
+                               } <br>
+                               obj = new class_two() <br>
+                               console.log(obj.fun_one()) <br>
+                               console.log(obj.fun_two()) <br>
+                           </li>
+                       </ul>
+                   </dd> <br>
+                   <dt id="pp"><b>Passing Parameters to Functions</b></dt>
+                   <dd>
+                       <ol type="1">
+                           <li>Default Parameters :- It allows named parameters to be initialized with default values if no value or undefined is passed.
+                               <ul>
+                                   <li>Example <br>
+                                       function fun_one(arg1=10, arg2="ABC", arg3="XYZ") <br>
+                                       { <br>
+                                           console.log(arg1, arg2, arg3) <br>
+                                       } <br>
+                                       fun_one() <br>
+                                       fun_one(25) <br>
+                                       fun_one(undefined, "MERN") <br>
+                                       fun_one(undefined, undefined, undefined) <br>
+                                       fun_one(null, null, null) <br>
+                                       fun_one(null, null, undefined) <br>
+                                       fun_one(undefined, 'undefined', undefined) <br>
+                                   </li>
+                               </ul>
+                           </li>
+                           <li>Optional Parameters :- While calling a function, no need to pass all arguments i.e. we can keep few arguments as optional.
+                               <ul>
+                                   <li>Example <br>
+                                       function fun_one(arg1, arg2, arg3) <br>
+                                       { <br>
+                                           console.log(arg1, arg2, arg3) <br>
+                                       } <br>
+                                       fun_one() <br>
+                                       fun_one("Hello") <br>
+                                       fun_one(null, "Hello") <br>
+                                       fun_one(10, 11.2, "Hello") <br>
+                                       fun_one(null, null null) <br>
+                                   </li>
+                               </ul>
+                           </li>
+                           <li>Rest Parameters :- It allows us to represent infinite number of arguments as an array. They are represented by '...'
+                            <ul>
+                                <li>Example <br>
+                                    function fun_one(...arg) <br>
+                                    { <br>
+                                        console.log(arg) <br>
+                                    } <br>
+                                    fun_one() <br>
+                                    fun_one("Hello") <br>
+                                    fun_one('Hello1','Hello2') <br>
+                                    fun_one(undefined, null) <br>
+                                </li>
+                            </ul>
+                        </li>
+                       </ol>
+                   </dd> <hr>
+                   <dt id="json"><b>JSON</b></dt>
+                   <dd>
+                       <ul>
+                           <li>It stands for JavaScript Object Notation.</li>
+                           <li>It is used to share data over network.</li>
+                           <li>It is light weight as compared to XML.</li>
+                           <li>Parsing of JSON is easy as compared to XML.</li>
+                           <li>Syntax of JSON <br>
+                               Object {} <br>
+                               Arrays [] <br>
+                               data  key and value pairs 
+                           </li>
+                           <li>Example <br>
+                               var demo = { <br>
+                                   key1 : 15 ; <br>
+                                   'sub_one' : "HTML" ; <br>
+                                   sub-three : 'Bootstrap' <br>
+                               } <br>
+                           </li>
+                       </ul>
+                   </dd> <hr>
+                   <dt id="freeze"><b>Freeze() and seal() Function</b></dt>
+                   <dd>
+                       <ul>
+                           <li>Comparison table 
+                               <table border="1px" solid black>
+                                   <thead>
+                                       <tr>
+                                           <th>Parameter</th>
+                                           <th>freeze()</th>
+                                           <th>seal()</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr>
+                                           <td>Read</td>
+                                           <td>allowed</td>
+                                           <td>allowed</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Update</td>
+                                           <td>denied</td>
+                                           <td>allowed</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Insert</td>
+                                           <td>denied</td>
+                                           <td>denied</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Deletion</td>
+                                           <td>denied</td>
+                                           <td>denied</td>
+                                       </tr>
+                                   </tbody>
+                               </table>
+                           </li>
+                       </ul>
+                   </dd> <hr>
+                   <dt id="promise"><b>Promises</b></dt>
+                   <dd>
+                       <ul>
+                           <li>A JavaScript Promise can be either pending or fulfilled or rejected.</li>
+                           <li>The Promise object supports two properties: state and result.</li>
+                           <li>While a Promise object is "pending" (working), the result is undefined.</li>
+                           <li>When a Promise object is "fulfilled", the result is a value.</li>
+                           <li>When a Promise object is "rejected", the result is an error object.</li>
+                       </ul>
+                   </dd> <hr>
+                   <dt id="callback"><b>Callbacks</b></dt>
+                   <dd>
+                       <ul>
+                           <li>Passing one function to another function as argument is called callback.</li>
+                           <li>Example <br>
+                               function add(num, callback) <br>
+                               { <br>
+                                   return callback((num+5), false) <br>
+                               } <br>
+                               add(7,(addRes, error)=>{ <br>
+                                   if(!error) <br>
+                                   { <br>
+                                       console.log(addRes) <br>
+                                   } <br>
+                               }) <br>
+                           </li>
+                       </ul>
+                   </dd> <hr>
+            </dl>
+        </div>
+            <div class="footer">
+                <p>Copyright 2022 &copy;. All rights reserved.</p>
+            </div>
+        </div>    
+    </body>
+</html>

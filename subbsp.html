@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 style="font-size: 45px; font-family: cursive;margin-left: 10px;">Education Buddies</h1>
+            </div>
+
+            <div class="options" id="home" style="position: sticky;">
+                <a href="index.html" style="text-decoration: none; color: white;">Home   </a>&nbsp;&nbsp;
+                <a href="subhtml.html" style="text-decoration: none; color: white;">HTML   </a>&nbsp;&nbsp;<a href="subcss.html" style="text-decoration: none; color: white;">CSS  </a>&nbsp;&nbsp;<a href="subbsp.html" style="text-decoration: none; color: white;">Bootstrap  </a>&nbsp;&nbsp;<a href="subjs.html" style="text-decoration: none; color: white;">Javascript</a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li id="bsp">Index
+                        <ul type="circle">
+                            <li><a href="#whyb" style="text-decoration: none; color: darkblue;">Why Bootstrap</a></li>
+                            <li><a href="#cdn" style="text-decoration: none; color: darkblue;">Bootstrap CDN</a></li>
+                            <li><a href="#colors" style="text-decoration: none; color:darkblue;">Colors</a></li>
+                            <li><a href="#list" style="text-decoration: none; color: darkblue;">Bootstrap List</a></li>
+                            <li><a href="#modal" style="text-decoration: none; color: darkblue;">Modal/Popup</a></li>
+                            <li><a href="#table" style="text-decoration: none; color: darkblue;">Tables</a></li>
+                            <li><a href="#input" style="text-decoration: none; color: darkblue;">Input Groups</a></li>
+                            <li><a href="#grid" style="text-decoration: none; color: darkblue;">Grid Systems</a></li>
+                            <li><a href="#form" style="text-decoration: none; color: darkblue;">Forms</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="details" style="overflow: scroll;">
+            <h1>Bootstrap</h1><hr>
+            <dl>
+            <dt id="whyb"><B>Bootstrap</B></dt>
+            <dd>
+                <ul>
+                    <li>Bootstrap is open-source framework of CSS.</li>
+                    <li>It helps in designing responsive and device friendly web pages.</li>
+                    <li>Bootstrap includes CSS and optional scripting templates.</li>
+                    <li>This framework helps in faster web development.</li>
+                </ul>
+            </dd><hr>
+            <dt id="cdn"><B>History</B></dt>
+            <dd>
+                <ul>
+                    <li>Bootstrap was developed by Mark Otto and Jacob Thornton at Twitter in August 2011.</li>
+                    <li>Bootstrap 2.x was released on 31st January 2012, with builtin support for Glyficons.</li>
+                    <li>Bootstrap 3 was released on 19 August, 2013.</li>
+                    <li>V3 focussed on mobile first approach.</li>
+                    <li>Bootstrap 4 was announced on 29th October and stable release was on 18th January 2018.</li>
+                    <li>Stable version is 4.5</li>
+                </ul>
+            </dd><hr>
+            <dt id="color"><B>Colors in Bootstrap</B></dt>
+            <dd>
+                <ul>
+                    <li>Bootstrap supports following colors:-</li>
+                    <li>primary</li>
+                    <li>secondary</li>
+                    <li>success</li>
+                    <li>danger</li>
+                    <li>warning</li>
+                    <li>info</li>
+                    <li>dark</li>
+                    <li>light</li>
+                    <li>white</li>
+                    <li>black</li>
+                    <li>white-50%</li>
+                    <li>black-50%</li>
+                </ul>
+            </dd><hr>
+            <dt id="list"><B>List</B></dt>
+            <dd>
+                <ul>
+                    <li>Class is list-group</li>
+                    <li>list-group-item</li>
+                    <li>list-group-item-action (clickable)</li>
+                    <li>list-group-item-color</li>
+                    <li>list-group-horizontal</li>
+                    <li>list-group-item active/disabled</li>
+                    <li>Basic Example <br>
+                        &lt;ul class="list-group"&gt; <br>
+                        &nbsp;&nbsp;&nbsp; &lt;li class="list-group-item">Item 1&lt;/li&gt; <br>
+                        &nbsp;&nbsp;&nbsp; &lt;li class="list-group-item list-group-item-action active">Item 2&lt;/li&gt; <br>
+                        &nbsp;&nbsp;&nbsp; &lt;li class="list-group-item list-group-item disabled">Item 3&lt;/li&gt; <br>
+                        &lt;/ul&gt;
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="modal"><B>Modal / Popup</B></dt>
+            <dd>
+                <ul>
+                    <li>Sizes : sm(small)     m(medium)     lg(largre)</li>
+                    <li>Buttons : btn class</li>
+                    <li>fontawesome : lib</li>
+                    <li>Operations
+                        <ul>
+                            <li>show modal : data-toggle="modal"</li>
+                            <li>set target : data-target="#my_division"</li>
+                            <li>disable 'Esc' : data-keyboard="false"</li>
+                            <li>disable mouse click : data-backdrop="static"</li>
+                            <li>enable tabs : tabindex= -1</li>
+                            <li>close modal : data-dismiss="modal"</li>
+                            <li>Eg <br>
+                                &lt;div class="modal" tabindex="-1" role="dialog"&gt; <br>
+                                  &lt;div class="modal-dialog" role="document"&gt; <br>
+                                      &lt;div class="modal-content"&gt; <br>
+                                     &lt;div class="modal-header"&gt; <br>
+                                         &lt;h5 class="modal-title"&gt;Modal title&lt;/h5&gt; <br>
+                                     &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt; <br>
+                                  &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt; <br>
+                                &lt;/button&gt; <br>
+                                   &lt;/div&gt; <br>
+                                   &lt;div class="modal-body"&gt; <br>
+                                      &lt;p&gt;Modal body text goes here.&lt;/p&gt; <br>
+                                 &lt;/div&gt; <br>
+                                  &lt;div class="modal-footer"&gt; <br>
+                                          &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt; <br>
+                                          &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt; <br>
+                                        &lt;/div&gt; <br>
+                                      &lt;/div&gt; <br>
+                                    &lt;/div&gt; <br>
+                                  &lt;/div&gt; <br>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="table"><b>Tables</b></dt>
+            <dd>
+                <ul>
+                    <li>margins : ml (left)   mr (right)   mt (top)   mb (bottom)   mx (horizontal)   my (vertical)   m (from all sides)</li>
+                    <li>padding : pl (left)   pr (right)   pt (top)   pb (bottom)   px (horizontal)   py (vertical)   p (from all sides)</li>
+                    <li>Min value is 0 and Max value is 5 for both.</li>
+                    <li>Classes
+                        <ul>
+                            <li>table</li>
+                            <li>table-bordered</li>
+                            <li>table-borderless</li>
+                            <li>table-sm or md or lg</li>
+                            <li>table-hover</li>
+                            <li>table-*...* (color)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="input"><b>Input Groups</b></dt>
+            <dd>
+                <ul>
+                    <li>Classes in input groups
+                        <ul>
+                            <li>input-group</li>
+                            <li>input-group-sm or md or lg</li>
+                            <li>input-group-prepend</li>
+                            <li>input-group-append</li>
+                            <li>input-group-text</li>
+                            <li>Eg <br>
+                                &lt;div class="input-group"&gt;  <br>
+                                    &lt;div class="input-group-prepend"&gt; <br>
+                                        &lt;div class="input-group-text"&gt; <br>
+                                            &lt;span&gt;&#8377;&lt;/span&gt; <br>
+                                            &lt;input class="form-control"&gt; <br>
+                                        &lt;/div&gt; <br>
+                                    &lt;/div&gt; <br>
+                                &lt;/div&gt; <br>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>dropdown
+                        <ul>
+                            <li>dropdown-toggle</li>
+                            <li>dropdown-menu</li>
+                            <li>dropdown-item</li>
+                            <li>dropdown-toggle-split</li>
+                            <li>dropdown-divider</li>
+                            <li>Eg <br>
+                                &lt;div class="dropdown-menu"&gt;  <br>
+                                    &lt;div class="dropdown-item"&gt;Master&lt;/div&gt;  <br>
+                                    &lt;div class="dropdown-item"&gt;Miss&lt;/div&gt;  <br>
+                                    &lt;div class="dropdown-item"&gt;Mrs&lt;/div&gt;  <br>
+                                    &lt;div class="dropdown-item"&gt;Mister&lt;/div&gt;  <br>
+                                &lt;/div&gt;
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="grid"><B>Grid System</B></dt>
+            <dd>
+                <ul>
+                    <li>Bootstrap divides screen into 12 equal columns.</li>
+                    <li>Screen sizes (width on px)
+                        <ol type="i">
+                            <li>es -> size < 576px</li>
+                            <li>sm -> size >= 576px</li>
+                            <li>md -> size >= 768px</li>
+                            <li>lg -> size >= 992px</li>
+                            <li>xl -> size >= 1200px</li>
+                            <li>xxl -> size >= 1400px</li>
+                        </ol>
+                    </li>
+                    <li>Eg <br>
+                        &lt;div class="container"&gt;      <br>
+                            &lt;div class="row"&gt;        <br>
+                              &lt;div class="col-sm"&gt;   <br>
+                                One of three columns <br>
+                              &lt;/div&gt;                 <br>
+                              &lt;div class="col-sm"&gt;   <br> 
+                                One of three columns <br> 
+                              &lt;/div&gt;                 <br>  
+                              &lt;div class="col-sm"&gt;   <br>
+                                One of three columns <br> 
+                              &lt;/div&gt;                 <br> 
+                            &lt;/div&gt;                   <br>
+                          &lt;/div&gt;                     <br>
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="form"><B>Forms</B></dt>
+            <dd>
+                <ul>
+                   <li>Form Classes
+                       <ul>
+                           <li>form-group</li>
+                           <li>form-control</li>
+                           <li>form-text</li>
+                           <li>form-check</li>
+                           <li>form-check-inline</li>
+                           <li>form-check-label</li>
+                       </ul>
+                   </li>
+                   <li>Eg <br>
+                    &lt;form&gt;  <br>
+                        &lt;div class="form-group"&gt; <br>
+                          &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt; <br>
+                          &lt;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"&gt;
+                          &lt;small id="emailHelp" class="form-text text-muted"&gt;We'll never share your email with anyone else.&lt;/small&gt; <br>
+                        &lt;/div&gt; <br>
+                        &lt;div class="form-group"&gt; <br>
+                          &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+                          &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;
+                        &lt;/div&gt; <br>
+                        &lt;div class="form-group form-check"&gt; <br>
+                          &lt;input type="checkbox" class="form-check-input" id="exampleCheck1"&gt; <br>
+                          &lt;label class="form-check-label" for="exampleCheck1"&gt;Check me out&lt;/label&gt; <br>
+                        &lt;/div&gt; <br>
+                        &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt; <br>
+                      &lt;/form&gt; <br>
+                </li>
+                </ul>
+            </dd><hr>
+            </dl>
+        </div>
+            <div class="footer">
+                <p>Copyright 2022 &copy;. All rights reserved.</p>
+            </div>
+        </div>    
+    </body>
+</html>

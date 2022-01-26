@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 style="font-size: 45px; font-family: cursive;margin-left: 10px;">Education Buddies</h1>
+            </div>
+
+            <div class="options" id="home" style="position: sticky;">
+                <a href="index.html" style="text-decoration: none; color: white;">Home   </a>&nbsp;&nbsp;
+                <a href="subhtml.html" style="text-decoration: none; color: white;">HTML   </a>&nbsp;&nbsp;<a href="subcss.html" style="text-decoration: none; color: white;">CSS  </a>&nbsp;&nbsp;<a href="subbsp.html" style="text-decoration: none; color: white;">Bootstrap  </a>&nbsp;&nbsp;<a href="subjs.html" style="text-decoration: none; color: white;">Javascript</a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li id="css">Index
+                        <ul type="circle">
+                            <li><a href="#whyc" style="text-decoration: none; color: darkblue;">Why CSS?</a></li>
+                            <li><a href="#syn" style="text-decoration: none; color: darkblue;">CSS syntax</a></li>
+                            <li><a href="#sel" style="text-decoration: none; color: darkblue;">CSS selectors</a></li>
+                            <li><a href="#col" style="text-decoration: none; color: darkblue;">CSS colors</a></li>
+                            <li><a href="#tf" style="text-decoration: none; color: darkblue;">CSS text formatting</a></li>
+                            <li><a href="#fo" style="text-decoration: none; color: darkblue;">CSS fonts</a></li>
+                            <li><a href="#ba" style="text-decoration: none; color: darkblue;">CSS backgrounds</a></li>
+                            <li><a href="#grad" style="text-decoration: none; color: darkblue;">CSS Gradient background</a></li>
+                            <li><a href="#tt" style="text-decoration: none; color: darkblue;">Text Transformation</a></li>
+                            <li><a href="#bo" style="text-decoration: none; color: darkblue;">CSS Borders</a></li>
+                            <li><a href="#ou" style="text-decoration: none; color: darkblue;">CSS Outline</a></li>
+                            <li><a href="#link" style="text-decoration: none; color: darkblue;">Links</a></li>
+                            <li><a href="#di" style="text-decoration: none; color: darkblue;">Display</a></li>
+                            <li><a href="#lis" style="text-decoration: none; color: darkblue;">CSS-Lists</a></li>
+                            <li><a href="#fl" style="text-decoration: none; color: darkblue;">Float Properties</a></li>
+                            <li><a href="#zid" style="text-decoration: none; color: darkblue;">Z-index Properties</a></li>
+                            <li><a href="#posi" style="text-decoration: none; color: darkblue;">CSS-Positions</a></li>
+                            <li><a href="#inpu" style="text-decoration: none; color: darkblue;">CSS-Inputs</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    </div>
+                    <div class="details" style="overflow: scroll;">
+        <h1>CSS</h1><hr>
+        <div class="main">
+        <dl>
+            <dt><b>CSS</b></dt>
+            <dd>
+                <ul>
+                    <li>It is a stylesheet language used for describing the presentation of document written in a markup language like HTML.</li>
+                    <li>CSS is a cornerstone technology for world wide web alongside HTML and Javascript.</li>
+                    <li>CSS is designed to eable separation of presentation and contents.</li>
+                    <li>All styles are stored in CSS files.</li>
+                    <li>CSS files must have extension as '.css' only.</li>
+                </ul>
+            </dd><hr>
+            <dt id="whyc"><b>Why CSS?</b></dt>
+            <dd>
+                <ul>
+                    <li>It allows much richer presentation appearance.</li>
+                    <li>It reduces work load by centralizing commands for visual appearance instead of scattered ones.</li>
+                    <li>Same styles can be reused for multiple documents.</li>
+                </ul>
+            </dd><hr>
+            <dt><b>Types of CSS</b></dt>
+            <dd>
+                <ol>
+                    <li>Inline CSS - Highest Priority. It can only be applied to the tag.</li>
+                    <li>Internal CSS - Medium Priority. It can be only be applied to the document.</li>
+                    <li>External CSS - Lowest Priority. It can be applied globally.</li>
+                </ol>
+            </dd><hr>
+            <dt id="syn"><b>CSS Syntax</b></dt>
+            <dd>
+                <ul>
+                    <li>CSS syntax is selector and declaration block.</li>
+                    <li>The selector points to the html element you want to style.</li>
+                    <li>Each declaration includes CSS property and value pair.</li>
+                    <li>Properties and values are separated by colon(:).</li>
+                    <li>Each property and value pair separated by semi-colon(;).</li>
+                    <li>h1 <br>
+                        {<br>
+                            &nbsp;&nbsp;&nbsp; color : red;<br>
+                            &nbsp;&nbsp;&nbsp; font-size : 12px;<br>
+                        }<br>
+                        where h1 is a selector; color & font-size are properties; red & 12px are values.
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="sel"><b>CSS Selectors</b></dt>
+            <dd>
+                <ul>
+                    <li>CSS selectors are used to select the contents you want to style.</li>
+                    <li>Types of CSS selectors
+                        <ol type="i">
+                            <li>Element selector</li>
+                            <li>Id selector</li>
+                            <li>Class selector</li>
+                            <li>Universal selector</li>
+                            <li>Group selector</li>
+                        </ol>
+                    </li>
+                </ul><hr>
+                <dt><b>Element Selectors</b></dt>
+                <dd>
+                    <ul>
+                        <li>The element selector selects the html element by name.</li>
+                        <li>Syntax :Non-breaking
+                            element <br>
+                            { <br>
+                                &nbsp;&nbsp;&nbsp; style 1;<br>
+                                &nbsp;&nbsp;&nbsp; style 2;<br> 
+                            }
+                        </li>
+                        <li>Eg <br>
+                            p <br>
+                            { <br>
+                                &nbsp;&nbsp;&nbsp; text-align : center;<br>
+                                &nbsp;&nbsp;&nbsp; color : blue;<br> 
+                            }
+                        </li>
+                    </ul><hr>
+                    <dt><b>Id Selectors</b></dt>
+                    <dd>
+                        <ul>
+                            <li>It uses id attribute of html element.</li>
+                            <li>to select a selector with specific id, '#' is used.</li>
+                            <li>Syntax :Non-breaking
+                                #id <br>
+                                { <br>
+                                    &nbsp;&nbsp;&nbsp; style 1;<br>
+                                    &nbsp;&nbsp;&nbsp; style 2;<br> 
+                                }
+                            </li>
+                            <li>Eg <br>
+                                #warning <br>
+                                { <br>
+                                    &nbsp;&nbsp;&nbsp; color : orange;<br> 
+                                }
+                            </li>
+                        </ul><hr>
+                        <dt><b>Class Selectors</b></dt>
+                        <dd>
+                            <ul>
+                                <li>The class selector selects the html element with specific class attributes.</li>
+                                <li>It is used with a period symabol followed by class name.</li>
+                                <li>Syntax :Non-breaking
+                                    .classname <br>
+                                    { <br>
+                                        &nbsp;&nbsp;&nbsp; style 1;<br>
+                                        &nbsp;&nbsp;&nbsp; style 2;<br> 
+                                    }
+                                </li>
+                                <li>Eg <br>
+                                   .cool <br>
+                                    { <br>
+                                        &nbsp;&nbsp;&nbsp; text-align : right;<br>
+                                        &nbsp;&nbsp;&nbsp; color : #002366;<br> 
+                                    }
+                                </li>
+                            </ul><hr>
+                            <dt><b>Universal Selector</b></dt>
+                            <dd>
+                                <ul>
+                                    <li>The universal selector is used as a wldcard selector.</li>
+                                    <li>It selects all elements in page.</li>
+                                    <li>It is denoted by '*' symbol.</li>
+                                    <li>Syntax :Non-breaking
+                                        * <br>
+                                        { <br>
+                                            &nbsp;&nbsp;&nbsp; style 1;<br>
+                                            &nbsp;&nbsp;&nbsp; style 2;<br> 
+                                        }
+                                    </li>
+                                    <li>Eg <br>
+                                        * <br>
+                                        { <br>
+                                            &nbsp;&nbsp;&nbsp; text-align : center;<br>
+                                            &nbsp;&nbsp;&nbsp; color : blue;<br> 
+                                        }
+                                    </li>
+                                </ul><hr>
+                                <dt><b>Group Selectors</b></dt>
+                                <dd>
+                                    <ul>
+                                        <li>It is used to select all elements with same style definition.</li>
+                                        <li>Commas are used to separate selectors in grouping.</li>
+                                        <li>Syntax :Non-breaking
+                                            element1, element2, element3 <br>
+                                            { <br>
+                                                &nbsp;&nbsp;&nbsp; style 1;<br>
+                                                &nbsp;&nbsp;&nbsp; style 2;<br> 
+                                            }
+                                        </li>
+                                        <li>Eg <br>
+                                            h2, h3, h4 <br>
+                                            { <br>
+                                                &nbsp;&nbsp;&nbsp; text-align : center;<br>
+                                                &nbsp;&nbsp;&nbsp; color : blue;<br> 
+                                            }
+                                        </li>
+                                    </ul>
+                               </dd><hr>
+                            </dd>
+                        </dd>
+                     </dd>
+                 </dd>
+              </dd><hr>
+              <dt id="col"><b>CSS Colors</b></dt>
+              <dd>
+                  <ul>
+                      <li>Colors are specified using pre-defined color names or color values.</li>
+                      <li>Color values
+                          <ul>
+                              <li>RGB -> Red, Green, Blue</li>
+                              <li>RGBA -> Red, Green, Blue, Alpha</li>
+                              <li>HSL -> Hue, Saturation, Lightness</li>
+                              <li>HSLA -> Hue, Saturation, Lightness, Alpha</li>
+                              <li>HEX -> Hexadecimal numbers</li>
+                          </ul>
+                          <li>Eg <br>
+                            &lt;html&gt;<br>
+                            &lt;head&gt; &lt;/head&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt; Observe the Color &lt;/h1&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 style="color:red"&gt; Observe the Color &lt;/h1&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 style="color:rgb(255,0,0)"&gt; Observe the Color &lt;/h1&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 style="color:hsl(0,100%,50%)"&gt; Observe the Color &lt;/h1&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 style="color:#ff0000"&gt; Observe the Color &lt;/h1&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 style="color:rgba(255,0,0,1)"&gt; Observe the Color &lt;/h1&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 style="color:rgba(255,0,0,0)"&gt; Observe the Color &lt;/h1&gt; <br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                         </li>
+                      </li>
+                  </ul>
+              </dd><hr>
+              <dt id="tf"><b>CSS Text Formatting</b></dt>
+              <dd>
+                  <ul>
+                      <li>Color :- Color property is used to set color of text.</li>
+                      <li>Text-align :- 'text-align' property is used to set horizontal alignment of text with values left, right, center, jusify.</li>
+                      <li>Direction :- Direction property is used to change direction of text i.e. left to right (ltr) or right to left (rtl).</li>
+                      <li>Unicode-bidi :- bidi-override used to handle bidirections of text.</li>
+                      <li>Eg <br>
+                        &lt;body&gt; <br>
+                        &lt;h1&gt;Normal Text &lt;/h1&gt; <br>
+                        &lt;h1 style="direction:rtl"&gt;Notice my direction &lt;/h1&gt; <br>
+                        &lt;h1 style="direction:rtl; unicode-bidi: bidi-override"&gt;Notice my direction &lt;/h1&gt; <br>
+                        &lt;/body&gt; 
+                      </li>
+                      <li>Text Decoration :- text-decoration is used to set or remove text decoration. eg. underline, overline, line-through, none. </li>
+                      <li>Text-shadow :- text-shadow property adds shadow effects to text.</li>
+                  </ul>
+              </dd><hr>
+            <dt id="fo"><b>CSS-Fonts</b></dt>
+            <dd>
+                <ul>
+                    <li>font-family property selects fonts.</li>
+                    <li>fonts are arranged as priorities.</li>
+                    <li>font-style property styles the font as normal, italic, oblique.</li>
+                    <li>font-weight property is used to highlight the text.</li>
+                    <li>font-variant property is used to change small letters to capitals or vice versa.</li>
+                    <li>font-size sets teh font of the text.</li>
+                </ul>
+            </dd><hr>
+            <dt id="ba"><b>CSS-Backgrounds</b></dt>
+            <dd>
+                <ul>
+                    <li>background-color property specifies background color of element.</li>
+                    <li>background-image adds image to bg.</li>
+                    <li>background-repeat repeats images either in horizontal direction or in vertical direction or no repeat.</li>
+                    <li>background-position sets the position to right/left or top/bottom.</li>
+                    <li id="grad">CSS Gradient Backgrounds
+                        <ol>
+                            <dl>
+                                <dt>Linear Gradient</dt>
+                                <dd> <ul>
+                                   <li>background : linear-gradient(direction,color_stop1,color_stop2,...)</li> 
+                                   <li> Minimum two colors are required.</li>
+                                   <li>Direction can be to right, to left, to bottom, to top, to right bottom and so on.</li></ul>
+                                </dd>
+                                <dt>Radial Gradient</dt>
+                                <dd> <ul>
+                                   <li>background : linear-gradient(shape,color_stop1,color_stop2,...)</li> 
+                                   <li> Minimum two colors are required.</li>
+                                   <li>Shape can be circle or ellipse.</li></ul>
+                                </dd>
+                            </dl>
+                        </ol>
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="tt"><b>Text Transformation</b></dt>
+            <dd>
+                <ul>
+                    <li>text-transformation property is used to specify all characters as upper case or lower case or capitalize each word.</li>
+                    <li>text-transformation : uppercase or lowercase or capitalize.</li>
+                    <li>Text Spacing
+                        <ul>
+                            <li>text-indent property is used to specify the indentation of first line of text.</li>
+                            <li>It takes px as units.</li>
+                        </ul>
+                    </li>
+                    <li>Letter Spacing
+                        <ul>
+                            <li>letter-spacing property is used to specify space between characters in text.</li>
+                            <li>It takes px as units.</li>
+                        </ul>
+                    </li>
+                    <li>Line Spacing
+                        <ul>
+                            <li>line-height property is used to specify vertical spacing between lines.</li>
+                            <li>It takes number of lines as units.</li>
+                        </ul>
+                    </li>
+                    <li>Word Spacing
+                        <ul>
+                            <li>word-spacing property is used to specify space between words.</li>
+                            <li>It takes px as units.</li>
+                            <li>Its default value is zero.</li>
+                        </ul>
+                    </li>
+                    <li>White Space
+                        <ul>
+                            <li>white-space property specifies how white space inside an element is handled.</li>
+                            <li>If value is nowrap, then the sequence of white space collapse into a single whitespace.</li>
+                            <li>The text continues the same line until &lt;br&gt; tag is encountered.</li>
+                            <li>If the value is normal, text will wrap when necessay.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="bo"><b>CSS-Borders</b></dt>
+            <dd>
+                <ul>
+                    <li>border property specifies border for an element.</li>
+                    <li>border-style : dotted <br>: solid <br>: dashed <br>: double <br>: groove <br>: ridge <br>:inset <br>:outset <br>:none <br>:hidden <br>:dashed double solid dotted (Priority will be clockwise)</li>
+                    <li>border-width -> specifies width of the border.</li>
+                    <li>border-width:number <br>:thin <br>:medium <br>:thick</li>
+                    <li>border-color -> specifies the color for the border.</li>
+                    <li>border-color : any color</li>
+                    <li>border-radius -> used to give rounded corners for the border. It takes px as units.</li>
+                    <li>Eg <br>
+                        border:solid red 1px;<br>
+                        border-radius:50px 0px; <br>
+                        border-color: red;
+                    </li>
+                    <li>border-image property
+                        <ul>
+                            <li>border-image-source -> source of image.</li>
+                            <li>border-image-slice -> used to sllice image.</li>
+                            <li>border-image-width -> used to set width of image.</li>
+                            <li>border-image-repeat -> round, repeat, stretch.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="ou"><b>CSS-Outline</b></dt>
+            <dd>
+                <ul>
+                    <li>Same as that of border.</li>
+                    <li>Outline comes after border.</li>
+                    <li>Sides, radious, image, 3d styles are not supported.</li>
+                    <li>Comparison Table of CSS Margin and CSS Padding
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>CSS Margin</th>
+                                    <th>CSS Padding</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Outerspace</td>
+                                    <td>Innerspace</td>
+                                </tr>
+                                <tr>
+                                    <td>margin-top : number or %</td>
+                                    <td>padding-top : number or %</td>
+                                </tr>
+                                <tr>
+                                    <td>margin-bottom : number or %</td>
+                                    <td>padding-bottom : number or %</td>
+                                </tr>
+                                <tr>
+                                    <td>margin-right : number or %</td>
+                                    <td>padding-right : number or %</td>
+                                </tr>
+                                <tr>
+                                    <td>margin-left : number or %</td>
+                                    <td>padding-left : number or %</td>
+                                </tr>
+                                <tr>
+                                    <td>margin :auto (horizontally center of container</td>
+                                    <td>padding : number(all sides) </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="link"><b>Links</b></dt>
+            <dd>
+                <ul>
+                    <li>Links can be styled with color, font-family, background, etc.</li>
+                    <li>Links have following states
+                        <ul>
+                            <li>a:link -> a normal or unvisited list.</li>
+                            <li>a:visited -> visited by user.</li>
+                            <li>a:hover -> mouse pointer on link.</li>
+                            <li>a:active -> moment it is clicked.</li>
+                            <li>Eg <br>
+                                a:link <br>
+                                { <br>
+                                    color:pink; <br>
+                                } <br>
+                                a:visited <br>
+                                { <br>
+                                    color:green; <br>
+                                } <br>
+                                a:hover <br>
+                                { <br>
+                                    color:red; <br>
+                                } <br>
+                                a:active <br>
+                                { <br>
+                                    color:blue; <br>
+                                } <br>
+                                &lt;a href=" "&gt;My new Link&lt;/a&gt;
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="di"><b>Display property</b></dt>
+            <dd>
+                <ul>
+                    <li>block -> places elements in next line.</li>
+                    <li>inline -> occupies only ample space (as span element).</li>
+                    <li>inline-block -> places element in single line as per enough width.</li>
+                    <li>
+                        display:inline; <br> or <br> display:block; <br>or <br> display:inline-block;
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="lis"><b>CSS Lists</b></dt>
+            <dd>
+                <ul>
+                    <li>list-style-type : dics or armenian;</li>
+                    <li>list-style-image : url("");</li>
+                    <li>list-style-position : inside or outside;</li>
+                    <li>float property -> float: left <br> : right <br> : none</li>
+                </ul>
+            </dd><hr>
+            <dt id="zid"><b>z-index property</b></dt>
+            <dd>
+                <ul>
+                    <li>This property specifies the stack order of an element.</li>
+                    <li>An element with greater stack order is always in front of an element with a lower stack order.</li>
+                    <li>z-index : number;</li>
+                    <li>
+                        Custom position of elements <br>
+                        position : absolute; <br>
+                        top : number; <br>
+                        left : number;
+                    </li>
+                </ul>
+            </dd><hr>
+            <dt id="posi"><b>CSS Positions</b></dt>
+            <dd>
+                <ul>
+                    <li>position: static -> elements are positioned static by default i.e. elements are not affected by the top, bottom, left, and right.</li>
+                    <li>position: relative -> relative to normal position i.e. left, right, top, bottom will cause it to be adjusted away from its normal position.</li>
+                    <li>position: fixed -> fixed if page is scrolled or not. Position relative to view port i.e. it always stays in the same place even if the page is scrolled.</li>
+                    <li>position: absolute -> positioned relative to the nearest ancestor. If an absolute positioned element has no positioned ancestor, it uses the document body and moves along with page scrolling.</li>
+                    <li>position: sticky -> fixed at top after scrolling i.e. position is based on user's scroll position.</li>
+                </ul>
+            </dd><hr>
+            <dt id="inpu"><b>CSS Inputs</b></dt>
+            <dd>
+                <ul>
+                    <li>forms can be styled with input elements.</li>
+                    <li>input <br>
+                        { <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; color:red; <br>
+                        } <br>
+                    </li>
+                    <li>to style specific elements... <br>
+                        input[type=text] <br>
+                        {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;color:blue; <br>
+                        } <br>
+                        input[type=password] <br>
+                        {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;color:blue ; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;width:50% ; <br>
+                        } <br>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <br>
+        </div>
+    </div>
+        <div class="footer">
+            <p>Copyright 2022 &copy;. All rights reserved.</p>
+        </div>
+        </div>
+    </body>
+</html>
